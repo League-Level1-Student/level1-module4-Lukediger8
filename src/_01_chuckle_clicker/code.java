@@ -48,7 +48,7 @@ public class code implements ActionListener {
 		}
 		else if (e.getSource() == punchlineButton)
 		{
-			JOptionPane.showMessageDialog(null, "to get to the other side.");
+			JOptionPane.showMessageDialog(null, "To get to the other side");
 		}
 	}
 	
