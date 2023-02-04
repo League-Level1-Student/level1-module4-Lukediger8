@@ -54,15 +54,14 @@ public class BookOfIllusions extends MouseAdapter {
 		System.out.println("clicked");
 		// 12. remove everything from the frame that was added earlier
 		frank.remove(label);
-		int frameWidth = 2000;
-		int frameHeight = 1000;
+	
 		// 13. load a new image like before (this is more than one line of code)
 		JLabel label2;
 		label2 = loadImageFromComputer("Hamster-Memes.jpg");
 		// 14. pack the frame
-		label2.setPreferredSize(new Dimension(frameWidth,frameHeight));
 		frank.add(label2);
 		frank.pack();
+		
 	}
 
 	// [OPTIONAL] 15. goad your users with some annoying or witty pop-ups
