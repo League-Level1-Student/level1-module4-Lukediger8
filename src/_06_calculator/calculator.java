@@ -1,6 +1,8 @@
 package _06_calculator;
 
+import java.awt.Component;
 import java.awt.Dimension;
+import java.awt.event.ActionEvent;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -55,14 +57,75 @@ public class calculator {
 		output.setPreferredSize(outputPanelSize);
 		panel.add(output);
 		
-		add.setText("Add");
-		sub.setText("Sub");
-		multi.setText("Multi");
-		div.setText("Div");
+		add.setText("add");
+		sub.setText("sub");
+		multi.setText("multi");
+		div.setText("div");
 		
 		operators.add(add);
 		operators.add(sub);
 		operators.add(multi);
 		operators.add(div);
+		
+		Dimension outputPanelSize1 = new Dimension(400, 40);
+		output.setPreferredSize(outputPanelSize1);
+		panel.add(output);
+		
+		output.setHorizontalAlignment((int) Component.CENTER_ALIGNMENT);
+		output.setPreferredSize(outputPanelSize1);
+		output.setText("Output");
+		
+		frame.pack();
 	}
+	
+	int add(int num1, int num2) {
+		int output;
+		output = num1 + num2;
+		return output;
+	}
+	
+	int sub(int num1, int num2) {
+		int output;
+		output = num1 - num2;
+		return output;
+	}
+	
+	int multi(int num1, int num2) {
+		int output;
+		output = num1 * num2;
+		return output;
+	}
+	
+	int div(int num1, int num2) {
+		int output;
+		output = num1 / num2;
+		return output;
+	}
+
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		JButton pressedButton = (JButton) e.getSource();
+		
+		int num1 = Integer.parseInt(input0.getText());
+		int num2 = Integer.parseInt(input1.getText());
+		
+		if(pressedButton == add)
+		{
+			output.setText(add(num1, num2) + "");
+		}
+		if(pressedButton == sub)
+		{
+			output.setText(sub(num1, num2) + "");
+		}
+		if(pressedButton == multi)
+		{
+			output.setText(multi(num1, num2) + "");
+		}
+		if(pressedButton == div)
+		{
+			output.setText(div(num1, num2) + "");
+		}
+	}
+		
 }
+
