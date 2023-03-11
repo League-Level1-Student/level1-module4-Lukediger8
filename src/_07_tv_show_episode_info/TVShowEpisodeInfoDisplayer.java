@@ -17,6 +17,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
+
 public class TVShowEpisodeInfoDisplayer implements ActionListener{
 
 	JFrame frame = new JFrame("Tv Info");
@@ -34,7 +36,7 @@ public class TVShowEpisodeInfoDisplayer implements ActionListener{
 		pane.add(submit);
 		frame.pack();
 		
-		submit.addActionListener(this);
+		submit.addActionListener(this); 
 	}
 
 	
