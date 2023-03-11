@@ -1,6 +1,7 @@
 package _08_pig_latin;
 
 public class PigLatinTranslator {
+	
     /**
      * Method to translate a english to pig latin.
      * 
