@@ -3,11 +3,13 @@ package _08_pig_latin;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
 public class PigLatinTranslator implements ActionListener{
 	
-	public static void main(String[] args) {
-		private JPanel
-	}
+	
     /**
      * Method to translate a english to pig latin.
      * 
@@ -15,6 +17,27 @@ public class PigLatinTranslator implements ActionListener{
      *            The sentence in English
      * @return The pig latin version
      */
+	JFrame frame;
+	JPanel panel;
+	JButton button;
+	JButton button2;
+	JButton speak;
+	
+	void MakeButtons() {
+	 frame = new JFrame();
+	 frame.setVisible(true);
+	 panel = new JPanel();
+	 
+	 button = new JButton();
+	 button.setName(">>");
+	 button.addActionListener(this);
+	 
+	 
+	 	
+	
+		}
+		
+	
     public static String translateEnglishToPigLatin(String s) {
         String latin = "";
         int i = 0;
