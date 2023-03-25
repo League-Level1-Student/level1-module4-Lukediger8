@@ -1,7 +1,13 @@
 package _08_pig_latin;
 
-public class PigLatinTranslator {
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class PigLatinTranslator implements ActionListener{
 	
+	public static void main(String[] args) {
+		private JPanel
+	}
     /**
      * Method to translate a english to pig latin.
      * 
@@ -121,4 +127,9 @@ public class PigLatinTranslator {
                 return i;
         return 0;
     }
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
 }
