@@ -1,12 +1,13 @@
 package _08_pig_latin;
 
 import java.awt.event.ActionEvent;
+
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-
+import javax.swing.JTextField;
 public class PigLatinTranslator implements ActionListener{
 	
 	
@@ -22,6 +23,8 @@ public class PigLatinTranslator implements ActionListener{
 	JButton button;
 	JButton button2;
 	JButton speak;
+	JTextField text;
+
 	
 	void MakeButtons() {
 	 frame = new JFrame();
@@ -29,8 +32,21 @@ public class PigLatinTranslator implements ActionListener{
 	 panel = new JPanel();
 	 
 	 button = new JButton();
-	 button.setName(">>");
+	 button.setText(">>");
 	 button.addActionListener(this);
+	 
+	 button2 = new JButton();
+	 button2.setText("<<");
+	 button2.addActionListener(this);
+	 
+	 speak = new JButton();
+	 speak.setText("speak");
+	 speak.addActionListener(this);
+	 
+	 
+	
+	 
+	 
 	 
 	 
 	 	
