@@ -5,7 +5,7 @@ public class PigLatin_Runner {
 	public static void main(String[] args) {
 		
 		PigLatinTranslator piglatintranslator = new PigLatinTranslator(); 
-	
+		piglatintranslator.MakeButtons(); 
 	
 	
 	
