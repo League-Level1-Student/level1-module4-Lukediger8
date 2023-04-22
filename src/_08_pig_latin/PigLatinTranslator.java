@@ -188,10 +188,16 @@ public class PigLatinTranslator implements ActionListener {
 				return i;
 		return 0;
 	}
-
+	
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		// TODO Auto-generated method stub
-		JButton speak = (JButton) arg0.getSource();
+		JButton pressed = (JButton) arg0.getSource();
+		if (pressed == button) {
+			String w = text.getText();
+			String translated = translateEnglishToPigLatin(w);
+			text2.setText(translated);
+		}
 	}
+
 }
