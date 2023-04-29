@@ -197,7 +197,18 @@ public class PigLatinTranslator implements ActionListener {
 			String w = text.getText();
 			String translated = translateEnglishToPigLatin(w);
 			text2.setText(translated);
-		}
-	}
+				
+			}
 
+		if (pressed == button2) {
+			String k = text.getText();
+			String translatev = translatePigLatinToEnglish(k);
+			text2.setText(translatev);	
+	}
+		
+	}
+	
 }
+	
+	
+
