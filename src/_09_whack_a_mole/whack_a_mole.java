@@ -70,6 +70,8 @@ panel.setSize(600,558);
 
 frame.add(panel);
 
+
+
 frame.setVisible(true);
 
 panel.setVisible(true);
