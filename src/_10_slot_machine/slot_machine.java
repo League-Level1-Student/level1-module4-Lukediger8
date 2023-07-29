@@ -31,6 +31,8 @@ panel.add(SPIN);
 frame.setSize(600,558);
 panel.setSize(600,558);
 SPIN.setSize(f,g);
-
+SPIN.setVisible(true);
+frame.setVisible(true);
+panel.setVisible(true);
 }
 }

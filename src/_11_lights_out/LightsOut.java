@@ -1,12 +1,14 @@
 package _11_lights_out;
 
 import java.awt.Color;
+import java.awt.GridLayout;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-
+import javax.swing.JLabel;
 /**
  * 
  * Lights Out is a puzzle game with a grid of lights that are either on (light
@@ -18,19 +20,31 @@ import javax.swing.JPanel;
  * 
  */
 public class LightsOut implements MouseListener {
-
+	JFrame frame = new JFrame();
 	JPanel gamePanel = new JPanel();
 
 	public LightsOut() {
 
 		/** PART 1. CREATE YOUR LIGHT BOARD **/
 		//1. Make your gamePanel a 5x5 grid with setLayout(new GridLayout(5, 5));
-		
+		gamePanel.setLayout(new GridLayout(5,5));
 		
 			//2. Add 25 JLabels to your gamePanel (these are your lights)
-
+		for(int i=0; i<25; i++) {
+		JLabel label = new JLabel();
+		label.setVisible(true);
+		gamePanel.add(label);
+		label.setText(i + "");
+		label.setOpaque(true);
+		label.setBackground(Color.LIGHT_GRAY);
+		label.addMouseListener(this);
+		frame.add(gamePanel);
+		frame.setSize(140,140);
+		label.setSize(25,25);
+		}
+			
 			//3. Use setText() to add a position number to each light (0-24).
-
+		
 			//4. Set the background of each light to LIGHT_GRAY
 			// - you will also have to set the background to opaque.
 			// - Use light.setOpaque(true);
