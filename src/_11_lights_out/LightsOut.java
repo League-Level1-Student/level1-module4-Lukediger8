@@ -65,13 +65,13 @@ public class LightsOut implements MouseListener {
 		// 1. Get the light that was clicked on `(JLabel) e.getSource`
 		JLabel bob = (JLabel)e.getSource();
 		// 2. Get the number (position) of the light
-		
+		String num = bob.getText();
 		// 3. Now use the makeMove method to code which lights turn on and off.
 		
 		// 4.Check if the player has won (e.g. all the lights are off)
 		// ---- HINT: use `getLightAtPosition` to get the light at each position
 		// ---------- use 'getBackground' to get the light color
-
+		
 		/** PART 3: RANDOMIZE YOUR BOARD **/
 		// Now that your game works can you make the game start with some lights on?
 
