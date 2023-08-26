@@ -43,6 +43,7 @@ public class LightsOut implements MouseListener {
 			frame.add(gamePanel);
 			frame.setSize(140, 140);
 			label.setSize(25, 25);
+			frame.setVisible(true);
 		}
 
 		// 3. Use setText() to add a position number to each light (0-24).
@@ -67,14 +68,21 @@ public class LightsOut implements MouseListener {
 		// 2. Get the number (position) of the light
 		String num = bob.getText();
 		// 3. Now use the makeMove method to code which lights turn on and off.
-		
+		int jay = Integer.parseInt(num);
+		makeMove(jay);
 		// 4.Check if the player has won (e.g. all the lights are off)
 		// ---- HINT: use `getLightAtPosition` to get the light at each position
 		// ---------- use 'getBackground' to get the light color
-		
+	JLabel wjogrps = getLightAtPosition();
+	getBackground(wjogrps);
 		/** PART 3: RANDOMIZE YOUR BOARD **/
 		// Now that your game works can you make the game start with some lights on?
 
+	}
+
+	private void getBackground(JLabel wjogrps) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	void makeMove(int pos) {
@@ -93,7 +101,7 @@ public class LightsOut implements MouseListener {
 		}
 	}
 
-	JLabel getLightAtPosition(int lightPosition) {
+	JLabel getLightAtPosition() {
 		return (JLabel) gamePanel.getComponent(lightPosition);
 	}
 
