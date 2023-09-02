@@ -73,12 +73,15 @@ public class LightsOut implements MouseListener {
 		// 4.Check if the player has won (e.g. all the lights are off)
 		// ---- HINT: use `getLightAtPosition` to get the light at each position
 		// ---------- use 'getBackground' to get the light color
-	JLabel wjogrps = getLightAtPosition();
+	JLabel wjogrps = getLightAtPosition(jay);
 	getBackground(wjogrps);
+	
+	
 		/** PART 3: RANDOMIZE YOUR BOARD **/
 		// Now that your game works can you make the game start with some lights on?
 
 	}
+	
 
 	private void getBackground(JLabel wjogrps) {
 		// TODO Auto-generated method stub
@@ -101,7 +104,7 @@ public class LightsOut implements MouseListener {
 		}
 	}
 
-	JLabel getLightAtPosition() {
+	JLabel getLightAtPosition(int lightPosition) {
 		return (JLabel) gamePanel.getComponent(lightPosition);
 	}
 
